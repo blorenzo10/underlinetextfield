@@ -9,13 +9,50 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var userEmail: String = ""
+    @State var userPassword: String = ""
+    
+    private let emailIconName = "Icon_Email"
+    private let passwordIconName = "Icon_Password"
+    
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            Color.black.edgesIgnoringSafeArea(.all)
+        
+            VStack {
+                
+                UnderlineTextFieldView(
+                    text: $userEmail,
+                    textFieldView: textView,
+                    placeholder: "Email Address",
+                    imageName: emailIconName)
+                    .padding(.top, 100)
+                
+                UnderlineTextFieldView(
+                    text: $userPassword,
+                    textFieldView: passwordView,
+                    placeholder: "Password",
+                    imageName: passwordIconName)
+                    .padding(.top, 30)
+                
+                Spacer()
+            }
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+extension ContentView {
+    
+    private var textView: some View {
+        TextField("", text: $userEmail)
+            .foregroundColor(.white)
+            .keyboardType(.emailAddress)
+            .autocapitalization(.none)
+    }
+    
+    private var passwordView: some View {
+        SecureField("", text: $userPassword)
+            .foregroundColor(.white)
     }
 }

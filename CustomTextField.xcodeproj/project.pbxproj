@@ -13,6 +13,7 @@
 		BC54D82C24A7D51400925730 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC54D82B24A7D51400925730 /* Assets.xcassets */; };
 		BC54D82F24A7D51400925730 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC54D82E24A7D51400925730 /* Preview Assets.xcassets */; };
 		BC54D83224A7D51400925730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC54D83024A7D51400925730 /* LaunchScreen.storyboard */; };
+		BC54D83A24A7D52F00925730 /* UnderlineTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54D83924A7D52F00925730 /* UnderlineTextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BC54D82E24A7D51400925730 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC54D83124A7D51400925730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC54D83324A7D51400925730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC54D83924A7D52F00925730 /* UnderlineTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				BC54D82524A7D50D00925730 /* AppDelegate.swift */,
 				BC54D82724A7D50D00925730 /* SceneDelegate.swift */,
+				BC54D83924A7D52F00925730 /* UnderlineTextFieldView.swift */,
 				BC54D82924A7D50D00925730 /* ContentView.swift */,
 				BC54D82B24A7D51400925730 /* Assets.xcassets */,
 				BC54D83024A7D51400925730 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC54D82624A7D50D00925730 /* AppDelegate.swift in Sources */,
+				BC54D83A24A7D52F00925730 /* UnderlineTextFieldView.swift in Sources */,
 				BC54D82824A7D50D00925730 /* SceneDelegate.swift in Sources */,
 				BC54D82A24A7D50D00925730 /* ContentView.swift in Sources */,
 			);
